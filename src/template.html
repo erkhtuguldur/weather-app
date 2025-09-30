@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo">Weather App</div>
+        <div id="searchBar">
+            <input type="text" id="locationInput">
+            <button id="searchButton" class="bold">Search</button>
+        </div>
+        <div id="toggleUnit"></div>
+    </header>
+    <div id="errorDisplay" class="hide"></div>
+    <div class="loaderContainer hide">
+        <span class="loader hide"></span>
+    </div>
+    
+    <div id="mainContainer">
+        <div id="currentWeather">
+            <div id="locationName" class="bold"></div>
+            <div id="todayCard" class="card">
+                <img id="todayImg" src="#" alt="">
+                <div id="todayTemp" class="bold unit"></div>
+                <div id="additionalInfoContainer">
+                    <!-- <div class="feats">Feels like 100°F</div>
+                    <div class="feats">Humidity 80%</div>
+                    <div class="feats">Visibility 3km</div>
+                    <div class="feats">Cloudy</div> -->
+                </div>
+            </div>
+        </div>
+        <div id="fiveDayForecast">
+            <div id="fiveDayTitle" class="bold">Next 5 Days</div>
+            <div id="cardsContainer">
+                <!-- <div class="card">
+                    <div class="date">2025-09-28</div>
+                    <img src="#" alt="">
+                    <div class="temp">88°F</div>
+                    <div class="desc">Rain</div>
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div> -->
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

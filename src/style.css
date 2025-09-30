@@ -1,0 +1,214 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+    background: #2c2a9b;
+background: linear-gradient(90deg, rgba(44, 42, 155, 1) 0%, rgba(237, 83, 106, 1) 100%);
+}
+
+header{
+    display: flex;
+    align-items: center;
+
+    height: 10vh;
+    justify-content: space-between;
+    padding: 1vh 3vh 1vh 3vh ;
+    background-color: rgba(255, 255, 255, 0.452);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#logo{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#locationInput{
+  background-color: #ffffff00;
+  padding: 1vh;
+  border: solid rgba(0, 0, 0, 0.253) 1px;
+  border-radius: 2vh;
+    height: 4vh;
+}
+#searchButton{
+    height: 4vh;
+    width: 10vh;
+    border-radius: 2vh;
+    background-color:rgb(202,75,115) ;
+    border: none;
+}
+
+#searchButton:hover{
+  background-color: rgb(148, 52, 82);
+}
+
+#searchBar{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+#toggleUnit{
+    height: 3vh;
+    width: 4vh;
+    border-radius: 3vh;
+    background-color: rgb(202,75,115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggleUnit:hover{
+  background-color: rgb(148, 52, 82);
+}
+
+#locationName{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+#currentWeather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#todayCard{
+    width: 40vh;
+    height: 40vh;
+}
+.card{
+  padding: 1vh;
+  width: 20vh;
+  height: 25vh;
+    background-color: rgba(250, 250, 250, 0.349);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fiveDayForecast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#fiveDayTitle{
+    font-size: 2rem;
+}
+#cardsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+  flex-wrap: wrap;
+}
+#todayImg{
+  height: 15vh;
+  width: 15vh;
+}
+
+#todayTemp{
+  font-size: 5rem;
+}
+
+.card>img{
+  height: 10vh;
+  width: 10vh;
+}
+.bold{
+  font-weight: bold;
+}
+#errorDisplay{
+  color: red; 
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.hide{
+  display: none !important;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+.loaderContainer{
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background: #2c2a9b;
+background: linear-gradient(90deg, rgba(44, 42, 155, 1) 0%, rgba(237, 83, 106, 1) 100%);
+  width: 100vw;
+  height: 90vh;
+}
